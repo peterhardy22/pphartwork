@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- favicon.ico -->
+  <link rel='icon' href='img/favicon.ico' type='image/x-icon'/>
+  <title>PPH ART</title>
+<!-- bootstrap viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- superslides.css -->
+  <link rel="stylesheet" type="text/css" href="css/superslides.css">
+<!-- owl.carousel.css -->
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+<!-- BootstrapCDN CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- font awesome -->
+  <script src="https://kit.fontawesome.com/e89d7e9be6.js" crossorigin="anonymous"></script>
+<!-- fancybox css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<!-- style.css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<!-- REFRESH LOADER ICON -->
+  <div class="loader">
+      
+      <div class="inner"></div>
+  
+  </div>
+
+
+<!-- NAVBAR SECTION -->
+  <nav id="navigation" class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#contact">Peter Phelps Hardy</a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li>
+                  <a class="nav-link fab fa-instagram" href="https://www.instagram.com/pehardfogovna/" target="_blank" rel="noopener"></a>
+              </li>
+      </div>
+  </nav>
+
+
+<!-- ABOUT SECTION -->
+  <div id="about" class="section">
+      <div class="container">
+          <div class="row">
+
+              <div class="col-md-5">
+                  <img class="aboutImage" src="img/about.png" alt="selfie">
+              </div>
+
+              <div class="col-md-7">
+                  <h4>Hey there! My name is Peter Phelps Hardy.</h4>
+                  <p>I am originally from Chicago, Illinois, but currently live with my wife and new born 
+                  daughter in Oakland, California. I have been working in the art world as a fine art technician 
+                  for over a decade and have been exposed to some amazing things. Just this year I began taking an 
+                  interest in computer science and programming so I decided to enroll in a 6 month Data Analytics 
+                  BootCamp at UC Berekeley Extension. The bootcamp took place during the evenings and weekends so I 
+                  could continue to work full time at my current job to support my family. While gaining my data 
+                  analytics certificate I learned how to implement Python, MySql, MongoDB, Flask, HTML/CSS, and 
+                  Javascript to name just a few.</p>
+                  <p>I am extremely excited to begin a new career in the technology sphere. I have a constant thirst 
+                  for problem solving and building up my skills to become an expert in this field. Whether I am doing 
+                  software development or database administration, I cannot wait for the opportunity to showcase my 
+                  capabilities and demonstrate how far I have come in just a year.</p>
+                  <p>When I am not learning how to become better at programming, I love spending my time creating art, cooking
+                  & hanging out with my family as much as possible. Living in the Bay Area offers so many outdoor activities
+                  from camping in the redwoods to kayaking along the nearly infinite waterways. Since the weather is pretty much
+                  perfect all year round, my family and I take as much advantage as we can to enjoy it. 
+                  </p>
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+
+<!-- PORTFOLIO SECTION -->
+  <div id="portfolio" class="section">
+      <div class="container">
+          <div class="row">
+
+              <div class="heading">
+                  <h2>PORTFOLIO</h2>
+              </div>
+
+              <div class="filter">
+                  <ul id="filters">
+                      <!-- data-filter used to communicate with isotope plugin -->
+                      <li><a href="#" data-filter="*" class="current">ALL</a></li>
+                      <li><a href="#" data-filter=".pastels">Pastels</a></li>
+                      <li><a href="#" data-filter=".blockprints">Block Prints</a></li>
+                      <li><a href="#" data-filter=".miscprints">Misc. Prints</a></li>
+                      <li><a href="#" data-filter=".commissions">Commissions</a></li>
+                  </ul>
+              </div>
+
+              <div class="itemsContainer">
+                  <ul class="items">
+                      <!-- V GREEN GIRL -->
+                      <li onclick="" class="pastels col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Drawing 04 - Green Girl (Summer 2012).jpg" alt="baseball origins website">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/baseballOrigins.png" title="View image" class="openButton"
+                                  data-fancybox data-caption="This application was developed to help visualize the international spread of America's greatest pastime.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="https://baseball-origins.herokuapp.com/" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- H GREEN BOYS -->
+                      <li onclick="" class="commissions pastels col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <!-- thumbnail image -->
+                            <img src="img/portfolio/Drawing 06 - Green Boys (Summer 2013).JPG" alt="High Voltage Motorcars Website Logo">
+                            <div class="icons">
+                                <!-- opens image -->
+                                <a href="img/portfolio/underconstruction.jpg" title="View image" class="openButton"
+                                data-fancybox data-caption="Still working on it, will be available soon!">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                                <!-- opens link in a new window/tab-->
+                                <a href="" target="_blank" class="projectLink">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imageOverlay"></div>
+                        </div>
+                      </li>
+                      <!-- V GREEN LADY -->
+                      <li onclick="" class="commissions pastels col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Drawing 05 - Green Lady (Winter 2013).jpg" alt="coming-soon">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/underconstruction.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Still working on it, will be available soon!">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- H GHOSFACE BLOCK -->
+                      <li onclick="" class="blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Block 2 - Ghostface Killah (January 2010).jpg" alt="Bay Area Art Tracker headline">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/underconstruction.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Developing a way for art lovers to know what is on view at the art museums around the Bay Area on any given day.
+                                  All on one app!">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      
+                      <!-- H HTL MUGSHOT -->
+                      <li onclick="" class="blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Blockprint 4 - MUGshot HTL (April 2011).JPG" alt="Bay Area Art Tracker headline">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/underconstruction.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Developing a way for art lovers to know what is on view at the art museums around the Bay Area on any given day.
+                                  All on one app!">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- H ES MUGSHOT -->
+                      <li onclick="" class="blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Blockprint 11 - MUGshot ES (January 2014).JPG" alt="belly button biodiversity website thumbnail">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/bellyButtonBiodiversity.png" title="View image" class="openButton"
+                                  data-fancybox data-caption="Application designed to visualize the Belly Button Biodiversity Dataset and making it interactive and engaging.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- H EM MUGSHOT -->
+                      <li onclick="" class="blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Blockprint 12 - MUGshot EM (January 2014).jpg" alt="coming-soon">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/goodnightGrace.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Blockprint of my childhood dog Grace.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="https://photos.google.com/photo/AF1QipPZkKAZ8QD8snmx7ehg48c6m1G9hcM0hKYTDijh" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- H GK MUGSHOT -->
+                      <li onclick="" class="blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Blockprint 8 - MUGshot GK (July 2012).JPG" alt="coming-soon">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/goodnightGrace.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Blockprint of my childhood dog Grace.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="https://photos.google.com/photo/AF1QipPZkKAZ8QD8snmx7ehg48c6m1G9hcM0hKYTDijh" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+
+                      <!-- V BRONZE GIRL GIRL -->
+                      <li onclick="" class="pastels col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Drawing 07 - Bronze Girl (Winter 2013).jpg" alt="coming-soon">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/greenGirl.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="First of three pastel drawings completed in my 'Green People' series.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="https://photos.google.com/photo/AF1QipPjH-nKp1Au2QjDwn0ghnZGvLTFwzghYee9CI1e" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- V MADLIB -->
+                      <li onclick="" class="blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Blockprint 1.1 - Madlib (January 2010).JPG" alt="belly button biodiversity website thumbnail">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/bellyButtonBiodiversity.png" title="View image" class="openButton"
+                                  data-fancybox data-caption="Application designed to visualize the Belly Button Biodiversity Dataset and making it interactive and engaging.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- V KARL PASTEL-->
+                      <li onclick="" class="commissions pastels col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Drawing 08 - Karl Christiansen Commission (Winter 2014).JPG" alt="Bay Area Art Tracker headline">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/underconstruction.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Developing a way for art lovers to know what is on view at the art museums around the Bay Area on any given day.
+                                  All on one app!">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- V CHRIS JABIN -->
+                      <li onclick="" class="commissions pastels col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Drawing 09 - Christopher Jabin Commission (Summer 2014).jpg" alt="Bay Area Art Tracker headline">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/underconstruction.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Developing a way for art lovers to know what is on view at the art museums around the Bay Area on any given day.
+                                  All on one app!">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+
+                      <!-- H STYLES P BLOCKPRINT -->
+                      <li onclick="" class="commissions blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Blockprint 5 - Styles P (January 2012).JPG" alt="belly button biodiversity website thumbnail">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/bellyButtonBiodiversity.png" title="View image" class="openButton"
+                                  data-fancybox data-caption="Application designed to visualize the Belly Button Biodiversity Dataset and making it interactive and engaging.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- H JADAKISS BLOCKPRINT -->
+                      <li onclick="" class="commissions blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Blockprint 6 - Jadakiss (February 2012).JPG" alt="coming-soon">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/goodnightGrace.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Blockprint of my childhood dog Grace.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="https://photos.google.com/photo/AF1QipPZkKAZ8QD8snmx7ehg48c6m1G9hcM0hKYTDijh" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- H SHEEK BLOCKRPINT -->
+                      <li onclick="" class="commissions blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Blockprint 7 - Sheek Louch (February 2012).JPG" alt="coming-soon">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/goodnightGrace.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Blockprint of my childhood dog Grace.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="https://photos.google.com/photo/AF1QipPZkKAZ8QD8snmx7ehg48c6m1G9hcM0hKYTDijh" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- H RON SWANSON -->
+                      <li onclick="" class="commissions blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Blockprint 9 - Ron Swanson (June 2012).JPG" alt="coming-soon">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/goodnightGrace.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Blockprint of my childhood dog Grace.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="https://photos.google.com/photo/AF1QipPZkKAZ8QD8snmx7ehg48c6m1G9hcM0hKYTDijh" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>                      
+
+                      <!-- H MY TRINITY -->
+                      <li onclick="" class="pastels col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Drawing 02 - My Trinity (March 2011).JPG" alt="coming-soon">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/goodnightGrace.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Blockprint of my childhood dog Grace.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="https://photos.google.com/photo/AF1QipPZkKAZ8QD8snmx7ehg48c6m1G9hcM0hKYTDijh" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- V MAX PASTEL -->
+                      <li onclick="" class="commissions pastels col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Drawing 10 - Max (Spring 2015).jpg" alt="belly button biodiversity website thumbnail">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/bellyButtonBiodiversity.png" title="View image" class="openButton"
+                                  data-fancybox data-caption="Application designed to visualize the Belly Button Biodiversity Dataset and making it interactive and engaging.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- H THE BRECKS-->
+                      <li onclick="" class="blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Blockprint 13 - The Brecks (December 2014).jpg" alt="coming-soon">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/goodnightGrace.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Blockprint of my childhood dog Grace.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="https://photos.google.com/photo/AF1QipPZkKAZ8QD8snmx7ehg48c6m1G9hcM0hKYTDijh" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- V MADLIB -->
+                      <li onclick="" class="blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Blockprint 1.2 - Madlib (January 2010).JPG" alt="belly button biodiversity website thumbnail">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/bellyButtonBiodiversity.png" title="View image" class="openButton"
+                                  data-fancybox data-caption="Application designed to visualize the Belly Button Biodiversity Dataset and making it interactive and engaging.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+
+                      <!-- H GHOSTFACE BLOCKPRINT-->
+                      <li onclick="" class="blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Blockprint 2 - Ghostface (January 2010).JPG" alt="Bay Area Art Tracker headline">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/underconstruction.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Developing a way for art lovers to know what is on view at the art museums around the Bay Area on any given day.
+                                  All on one app!">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- V ALMOST THERE-->
+                      <li onclick="" class="miscprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Monotype 1 - Almost There (March 2010).JPG" alt="coming-soon">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/goodnightGrace.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Blockprint of my childhood dog Grace.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="https://photos.google.com/photo/AF1QipPZkKAZ8QD8snmx7ehg48c6m1G9hcM0hKYTDijh" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- H J DILLA BLOCK -->
+                      <li onclick="" class="commissions blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Block 7 - J Dilla (February 2012).JPG" alt="coming-soon">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/goodnightGrace.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Blockprint of my childhood dog Grace.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="https://photos.google.com/photo/AF1QipPZkKAZ8QD8snmx7ehg48c6m1G9hcM0hKYTDijh" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- H STYLES P BLOCK -->
+                      <li onclick="" class="commissions blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Block 4 - Styles P (January 2012).JPG" alt="belly button biodiversity website thumbnail">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/bellyButtonBiodiversity.png" title="View image" class="openButton"
+                                  data-fancybox data-caption="Application designed to visualize the Belly Button Biodiversity Dataset and making it interactive and engaging.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+
+                      <!-- H JADAKISS BLOCK -->
+                      <li onclick="" class="commissions blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Block 5 - Jadakiss (February 2012).JPG" alt="coming-soon">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/goodnightGrace.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Blockprint of my childhood dog Grace.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="https://photos.google.com/photo/AF1QipPZkKAZ8QD8snmx7ehg48c6m1G9hcM0hKYTDijh" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- H SHEEK BLOCK -->
+                      <li onclick="" class="commissions blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Block 6 - Sheek Louch (February 2012).JPG" alt="coming-soon">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/goodnightGrace.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Blockprint of my childhood dog Grace.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="https://photos.google.com/photo/AF1QipPZkKAZ8QD8snmx7ehg48c6m1G9hcM0hKYTDijh" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- H GOODNIGHT GRACE -->
+                      <li onclick="" class="blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Blockprint 10 - Goodnight Grace (July 2013).jpg" alt="coming-soon">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/goodnightGrace.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Blockprint of my childhood dog Grace.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="https://photos.google.com/photo/AF1QipPZkKAZ8QD8snmx7ehg48c6m1G9hcM0hKYTDijh" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- H AQUATINT 1 -->
+                      <li onclick="" class="miscprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Aquatint 1 - (May 2011).jpg" alt="Bay Area Art Tracker headline">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/underconstruction.jpg" title="View image" class="openButton"
+                                  data-fancybox data-caption="Developing a way for art lovers to know what is on view at the art museums around the Bay Area on any given day.
+                                  All on one app!">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+
+                      <!-- V DRAWING 3-->
+                      <li onclick="" class="pastels col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Drawing 03 - (May 2011).JPG" alt="belly button biodiversity website thumbnail">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/bellyButtonBiodiversity.png" title="View image" class="openButton"
+                                  data-fancybox data-caption="Application designed to visualize the Belly Button Biodiversity Dataset and making it interactive and engaging.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- V GORDY-->
+                      <li onclick="" class="commissions blockprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Blockprint 14 - Gordy (January 2015).JPG" alt="belly button biodiversity website thumbnail">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/bellyButtonBiodiversity.png" title="View image" class="openButton"
+                                  data-fancybox data-caption="Application designed to visualize the Belly Button Biodiversity Dataset and making it interactive and engaging.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- V DRAWING 1-->
+                      <li onclick="" class="pastels col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Drawing 01 - (February 2011).JPG" alt="belly button biodiversity website thumbnail">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/bellyButtonBiodiversity.png" title="View image" class="openButton"
+                                  data-fancybox data-caption="Application designed to visualize the Belly Button Biodiversity Dataset and making it interactive and engaging.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>
+                      <!-- V ETCHING 1-->
+                      <li onclick="" class="miscprints col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                          <div class="item">
+                              <!-- thumbnail image -->
+                              <img src="img/portfolio/Etching 1 - (May 2011).JPG" alt="belly button biodiversity website thumbnail">
+                              <div class="icons">
+                                  <!-- opens image -->
+                                  <a href="img/portfolio/bellyButtonBiodiversity.png" title="View image" class="openButton"
+                                  data-fancybox data-caption="Application designed to visualize the Belly Button Biodiversity Dataset and making it interactive and engaging.">
+                                      <i class="fas fa-search"></i>
+                                  </a>
+                                  <!-- opens link in a new window/tab-->
+                                  <a href="" target="_blank" class="projectLink">
+                                      <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                              <div class="imageOverlay"></div>
+                          </div>
+                      </li>                  
+
+                  </ul>
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+
+<!-- CONTACT SECTION -->
+  <div id="contact" class="contactSection section">
+      <div class="col-md-12 text-center">
+
+          <p class="subHeading">Like what you see?</p>
+          <h2>I would love to hear your thoughts!</h2>
+          <a href="mailTo:peterphardy@gmail.com" class="contactButton">CONTACT ME!</a>
+      
+      </div>
+  </div>
+  
+
+<!-- COPYRIGHT SECTION -->
+  <div class="copyrightSection">
+
+      <div class="col-md-12 text-center">
+          <p>&copy; Copyright Peter Phelps Hardy 2019</p>
+      </div>
+
+  </div>
+
+
+<!-- superslides.js -->
+  <script src="js/jquery.superslides.min.js"></script>
+<!-- easypiechart.js -->
+  <script src="js/jquery.easypiechart.min.js"></script>
+<!-- owl.carousel.js -->
+  <script src="js/owl.carousel.min.js"></script>
+<!-- typed.js -->
+  <script src="js/typed.min.js"></script>
+<!-- BootstrapCDN JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- isotope.pkgd.min.js -->
+  <script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+<!-- fancybox.js -->
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<!-- activate superslides -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

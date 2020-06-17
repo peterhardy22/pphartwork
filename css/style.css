@@ -1,0 +1,379 @@
+@import url(./partials/variables.css);
+
+
+/* DEFAULT STYLING */
+html {
+  background-color: #333335;
+}
+
+body {
+  font-size: 14px;
+  color: white;
+  background-color: #333335;
+  letter-spacing: 1px;
+}
+
+
+/* LOADER */
+.loader {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.loader .inner {
+    width: 100%;
+    height: 100%;
+    /* vertically and horizontally centered and won't repeat gif */
+    background: url(../img/loader.gif) center center no-repeat;
+}
+
+
+
+/* NAVBAR SECTION */
+#navigation {
+    background-color: #333335;
+    padding: 20px 15px;
+    /* such a high z-index to guarantee its always in front */
+    z-index: 100;
+    width: 100%;
+ }
+
+#navigation li {
+    padding: 0 10px;
+}
+
+#navigation li a {
+    color: white;
+}
+
+#navigation .fab {
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-brand:hover,
+#navigation li a:hover {
+    color: var(--red);
+    transition: all 1s ease-out;
+}
+.navbar-nav:hover,
+#navigation li a:hover {
+    color: var(--teal);
+    transition: all 1s ease-out;
+}
+/* styling the navbar menu icon */
+.navbar-toggler-icon {
+    background: url(../img/icons/menu.png);
+    background-size: 100%;
+ }
+/* what gets the navbar to stay fixed */
+.fixedNav #navigation {
+    position: fixed;
+    top: 0;
+}
+
+
+/* ABOUT SECTION */
+.section {
+    /* 100px top and bottom, 0 left and right */
+    padding: 100px 0;
+}
+
+.section h4 {
+    padding: 15px 0px;
+}
+
+.aboutImage {
+    /* can only be as wide as the col width */
+    max-width: 100%;
+}
+
+.section .col-md-7 a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    max-width: 100%;
+    padding: 15px 30px;
+    margin-left: 75px;
+}
+
+.section a:hover {
+    color: var(--teal);
+    transition: all 1s ease-out;
+}
+
+
+
+/* CONTACT SECTION */
+.contactButton {
+    color: white;
+    padding: 15px 30px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid black;
+    /* higher the radius the more curve to the border */
+    border-radius: 2px; 
+}
+
+.contactButton:hover {
+    /* takes away underline when hovering over */
+    text-decoration: none;
+    color: #e84118;
+    background-color: black;
+}
+
+
+/* PORTFOLIO SECTION */
+.filter a {
+    color: white;
+    padding: 18px 10px;
+    display: block;
+}
+
+.filter li {
+    /* moves buttons from overlapping to being side by side */
+    display: inline-block;
+    padding: 5px;
+}
+
+.filter a:hover {
+    text-decoration: none;
+}
+
+.filter .current {
+    background-color: black;
+    border-color: white;
+    color: var(--teal);
+    border-radius: 50px / 15px;
+}
+
+.filter {
+    text-align: center;
+    width: 100%;
+}
+
+.section .heading {
+    text-align: center;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.items li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.itemsContainer {
+    width: 100%;
+}
+
+.items li img {
+    width: 100%;
+    /* transition code between items */
+    /* chrome */
+    -webkit-transition: all 0.2s linear, 1s;
+    /* firefox */
+    -moz-transition: all 0.2s linear, 1s;
+    /* opera */
+    -o-transition: all 0.2s linear, 1s;
+    /* microsoft edge & internet explorer */
+    -ms-transition: all 0.2s linear, 1s;
+    /* everything else... */
+    -transition: all 0.2s linear, 1s;
+}
+
+.items .item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.items .icons {
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    /* minus half the height */
+    margin: -20px auto 0 -47px;
+    text-align: center;
+    z-index: 3;
+}
+
+.items .icons i {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 9px;
+}
+
+.items a {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: relative;
+    display: inline-block;
+    /* transition code between items */
+    /* chrome */
+    -webkit-transition: all 0.2s linear, 0.2s;
+    /* firefox */
+    -moz-transition: all 0.2s linear, 0.2s;
+    /* opera */
+    -o-transition: all 0.2s linear, 0.2s;
+    /* microsoft edge & internet explorer */
+    -ms-transition: all 0.2s linear, 0.2s;
+    /* everything else... */
+    -transition: all 0.2s linear, 0.2s;
+}
+/* adds darkness styling to images */
+.items .imageOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    /* transition code between items */
+    /* chrome */
+    -webkit-transition: all 0.2s linear, 1s;
+    /* firefox */
+    -moz-transition: all 0.2s linear, 1s;
+    /* opera */
+    -o-transition: all 0.2s linear, 1s;
+    /* microsoft edge & internet explorer */
+    -ms-transition: all 0.2s linear, 1s;
+    /* everything else... */
+    -transition: all 0.2s linear, 1s;
+}
+/* adds darkness to image when hovering over */
+.items .item:hover .imageOverlay {
+    opacity: 1;
+}
+/* makes icons appear when hovering & dissapear when not */
+.items .openButton {
+    /* keeps off image to start with */
+    float: left;
+    left: -200px;
+}
+
+.items .projectLink {
+    /* keeps off image to start with */
+    float: right;
+    right: -200px;
+}
+
+.items .item:hover .openButton {
+    /* brings it back to the center */
+    left: 0px;
+}
+
+.items .item:hover .projectLink {
+    /* brings it back to the center */
+    right: 0px;
+}
+/* zoom in on image when hovering over */
+.items .item:hover img {
+    /* scale refers to x & y scale of image */
+    -webkit-transform: scale(1.05, 1.05);
+    /* firefox */
+    -moz-transform: scale(1.05, 1.05);
+    /* opera */
+    -o-transform: scale(1.05, 1.05);
+    /* microsoft edge & internet explorer */
+    -ms-transform: scale(1.05, 1.05);
+    /* everything else... */
+    -transform: scale(1.05, 1.05);
+} 
+/* allows four images to sit on one line */
+.items {
+  padding: 0;
+}
+
+
+/* COPYRIGHT SECTION */
+.copyrightSection {
+    background: #000;
+    color: #fff;
+    padding: 30px 5px;
+}
+
+.copyrightSection p {
+    /* paragraphs already have some styling, this takes away margin since padding is set above */
+    margin: 0;
+}
+
+
+@media screen and (max-device-width: 480px) {
+    .section .col-md-7 a {
+        text-decoration: none;
+        color: #000;
+        font-size: 30px;
+        max-width: 100%;
+        margin-left: 25px;
+    }
+
+    .squareContent h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        color: var(--background);
+    }
+}
+
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .section .col-md-7 a {
+        text-decoration: none;
+        color: #000;
+        font-size: 40px;
+        max-width: 100%;
+        padding: 10px 0px;
+    }
+
+    .squareContent h2 {
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        color: #e84118;
+    }
+
+    .squareContent h3 {
+        font-size: 9px;
+        font-weight: 600;
+        margin: 0;
+    }
+}
+
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .section .col-md-7 a {
+      text-decoration: none;
+      color: #000;
+      font-size: 40px;
+      max-width: 100%;
+      padding: 10px 0px;
+  }
+
+  .squareContent h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      font-weight: 400;
+      color: #e84118;
+  }
+
+  .squareContent h3 {
+      font-size: 9px;
+      font-weight: 600;
+      margin: 0;
+  }
+}
